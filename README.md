@@ -9,6 +9,10 @@ A production-ready, scalable multi-tenant SaaS backend built with NestJS, Prisma
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
+## 📖 Description
+
+This project provides a production-ready backend infrastructure for SaaS applications. It handles multi-tenancy, user authentication, subscription billing, team management, and more - so you can focus on building your product features.
+
 ## ✨ Features
 
 - **Multi-Tenancy** - Complete tenant isolation with role-based access
@@ -95,29 +99,6 @@ http://localhost:3000/docs
 
 ### Health
 - GET /api/v1/health - Health check
-
-## 📁 Project Structure
-
-src/
-├── common/           # Shared utilities
-├── config/           # Configuration
-├── database/         # Prisma module
-├── modules/          # Feature modules
-│   ├── auth/
-│   ├── users/
-│   ├── tenants/
-│   ├── subscription/
-│   ├── invitations/
-│   ├── api-keys/
-│   ├── notifications/
-│   ├── audit-logs/
-│   ├── billing/
-│   ├── dashboard/
-│   ├── health/
-│   ├── cache/
-│   └── email/
-├── queues/           # BullMQ processors
-└── main.ts
 
 ## 🐳 Docker
 
